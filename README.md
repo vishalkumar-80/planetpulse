@@ -1,5 +1,21 @@
 # PlanetPulse
 
+## Submission details
+
+- **Track:** Track 2 — Real-World AI Products
+- **Product brief:** PlanetPulse — Carbon Footprint Tracker
+- **Live app:** https://planetpulse-q1n7.onrender.com
+- **Standard API:** No. The brief does not define a fixed external API contract; PlanetPulse uses a custom Express REST API and is fully accessible through the browser interface.
+- **Test credentials:** None required. Authentication is intentionally not implemented, so graders can access every feature immediately.
+
+### Required feature checklist
+
+- [x] Activity logging with automatic, fixed-factor CO₂ calculation.
+- [x] Dashboard totals, weekly trend, category breakdown, and recent activity.
+- [x] Weekly target setting and an actionable exceeded-target nudge.
+- [x] Filterable, sortable activity history with deletion.
+- [x] Invalid and absurd-input protection with review and override.
+
 PlanetPulse is a full-stack carbon footprint tracker built for a hackathon. It helps people log everyday activities, understand their CO₂ impact, and stay within a personal weekly carbon budget.
 
 ## Highlights
