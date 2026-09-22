@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Settings {
+  id           Int      @id @default(1)
+  weeklyTarget Float    @default(50)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Activity {
+  id             String   @id @default(cuid())
+  type           String
+  quantity       Float
+  unit           String
+  emissionFactor Float
+  co2Kg          Float
+  date           DateTime
+  note           String?
+  unusual        Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}

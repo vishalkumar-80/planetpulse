@@ -1,0 +1,15 @@
+# Dependencies and generated frontend build
+node_modules/
+dist/
+
+# Local and deployed environment settings
+.env
+.env.*
+!.env.example
+
+# SQLite runtime data
+prisma/*.db
+prisma/*.db-*
+
+# TypeScript build metadata
+*.tsbuildinfo

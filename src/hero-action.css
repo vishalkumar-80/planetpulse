@@ -1,0 +1,15 @@
+/* Pair the dashboard call-to-action with the Earth illustration. */
+.hero .dark-btn {
+  position: absolute;
+  right: 184px;
+  bottom: 62px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .hero .dark-btn {
+    right: auto;
+    bottom: 22px;
+    left: 20px;
+  }
+}
